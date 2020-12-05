@@ -23,9 +23,9 @@ public class CameraController : MonoBehaviour
 		if (target)
 		{
 			Vector3 posNoZ = transform.position + offset;
-			Vector3 targetDirection = (target.transform.position - posNoZ);
+			Vector3 targetDirection = target.transform.position - posNoZ;
 			float interpVelocity = targetDirection.magnitude * speed;
-			targetPos = (transform.position) + (targetDirection.normalized * interpVelocity * Time.deltaTime);
+			targetPos = transform.position + targetDirection.normalized * interpVelocity * Time.deltaTime;
 			transform.position = Vector3.Lerp(transform.position, targetPos, 0.25f);
 
 		}
