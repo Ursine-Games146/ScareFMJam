@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+
     public CharacterStateController StateController { get; private set; }
 
 
@@ -13,6 +15,7 @@ public class Player : MonoBehaviour
 
 
     public Animator Anim { get; private set; }
+    public Rigidbody2D Rb2d { get; set; }
 
     [SerializeField] private PlayerData playerData;
 
@@ -29,6 +32,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         Anim = GetComponent<Animator>();
+        Rb2d = GetComponent<Rigidbody2D>();
 
         StateController.Initialize(PlayerIdle);
     }

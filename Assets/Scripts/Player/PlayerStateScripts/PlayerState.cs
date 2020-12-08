@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerState
 {
+
     protected CharacterStateController stateController;
     protected PlayerIdleState playerIdle;
     protected PlayerMoveState playerMove;
@@ -46,7 +47,10 @@ public class PlayerState
 
     public virtual void LogicUpdate()
     {
-
+        if(player.Rb2d.velocity.x != 0f)
+        {
+            stateController.ChangeState(player.PlayerMove);
+        }
     }
 
     public virtual void PhysicsUpdate()
