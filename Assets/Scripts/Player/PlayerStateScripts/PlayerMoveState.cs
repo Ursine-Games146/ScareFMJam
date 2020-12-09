@@ -51,7 +51,7 @@ public class PlayerMoveState : PlayerState
 
         if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
-            playerData.currentStamina -= 0.5f * Time.deltaTime;
+            playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             scale = player.transform.localScale;
             scale.y = 1;
@@ -61,7 +61,7 @@ public class PlayerMoveState : PlayerState
         else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
 
-            playerData.currentStamina -= 0.5f * Time.deltaTime;
+            playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             scale = player.transform.localScale;
             scale.y = -1;
