@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     public Animator Anim { get; private set; }
 
     public Image staminaBar;
-
+    public SpriteRenderer spriteRenderer;
     public Rigidbody2D Rb2d;
 
     public int FacingDirection { get; set; }
@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     {
         Anim = GetComponent<Animator>();
         Rb2d = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         playerData.currentStamina = playerData.maxStamina;
 

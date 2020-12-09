@@ -28,18 +28,15 @@ public class PlayerMoveState : PlayerState
 
 
         Vector2 X = player.Rb2d.velocity;
-        Vector3 scale = player.transform.localScale;
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            scale = player.transform.localScale;
-            scale.y = 1;
+            player.spriteRenderer.flipX = false;
             X.x = playerData.moveSpeed;
             player.Rb2d.velocity = X;
         }
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            scale = player.transform.localScale;
-            scale.y = -1;
+            player.spriteRenderer.flipX = true;
             X.x = playerData.moveSpeed * -1;
             player.Rb2d.velocity = X;
         }
@@ -53,8 +50,7 @@ public class PlayerMoveState : PlayerState
         {
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
-            scale = player.transform.localScale;
-            scale.y = 1;
+            player.spriteRenderer.flipX = false;
             X.x = playerData.runSpeed;
             player.Rb2d.velocity = X;
         }
@@ -63,8 +59,7 @@ public class PlayerMoveState : PlayerState
 
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
-            scale = player.transform.localScale;
-            scale.y = -1;
+            player.spriteRenderer.flipX = true;
             X.x = playerData.runSpeed * -1;
             player.Rb2d.velocity = X;
         }
