@@ -29,7 +29,7 @@ public class PlayerMoveState : PlayerState
 
         Vector2 X = player.Rb2d.velocity;
         Vector3 scale = player.transform.localScale;
-        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             scale = player.transform.localScale;
             scale.y = 1;
@@ -43,9 +43,17 @@ public class PlayerMoveState : PlayerState
             X.x = playerData.moveSpeed * -1;
             player.Rb2d.velocity = X;
         }
-        else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             stateController.ChangeState(player.PlayerIdle);
+        }
+        else if (Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
+        {
+            player.Rb2d.velocity = new Vector2(X.x + playerData.runSpeed, 0.0f);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina == 0)
+        {
+            return;
         }
 
     }

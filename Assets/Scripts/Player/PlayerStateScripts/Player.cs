@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
         Anim = GetComponent<Animator>();
         Rb2d = GetComponent<Rigidbody2D>();
 
+        playerData.currentStamina = playerData.maxStamina;
+
         FacingDirection = 1;
 
         StateController.Initialize(PlayerIdle);
