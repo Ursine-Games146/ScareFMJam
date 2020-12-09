@@ -9,6 +9,7 @@ TagManager:
   - Interactable
   - Moveable
   - Hideable
+  - Climbable
   layers:
   - Default
   - TransparentFX

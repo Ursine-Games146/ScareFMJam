@@ -1724,10 +1724,9 @@ GameObject:
   - component: {fileID: 1036817815}
   - component: {fileID: 1036817814}
   - component: {fileID: 1036817813}
-  - component: {fileID: 1036817816}
   m_Layer: 0
   m_Name: LadderMaybe
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1822,19 +1821,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1036817816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036817812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95722753b5ba3ee4aaa843c7eea86ff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1 &1069425119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,7 +2029,7 @@ MonoBehaviour:
   speed: 15
   minDistance: 0
   target: {fileID: 480682505}
-  offset: {x: 0, y: -3.5, z: 0}
+  offset: {x: 0, y: -2, z: 0}
 --- !u!114 &1279787058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2130,10 +2116,9 @@ GameObject:
   - component: {fileID: 1509187791}
   - component: {fileID: 1509187790}
   - component: {fileID: 1509187789}
-  - component: {fileID: 1509187792}
   m_Layer: 0
   m_Name: LadderMaybe (1)
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2228,19 +2213,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1509187792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509187788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95722753b5ba3ee4aaa843c7eea86ff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1 &1769082473
 GameObject:
   m_ObjectHideFlags: 0

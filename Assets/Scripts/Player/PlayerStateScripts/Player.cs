@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public PlayerIdleState PlayerIdle { get; private set; }
     public PlayerMoveState PlayerMove { get; private set; }
     public PlayerHideState PlayerHide { get; private set; }
+    public PlayerClimbState PlayerClimb { get; private set; }
 
 
     public Animator Anim { get; private set; }
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     public int FacingDirection { get; set; }
     public bool canHide { get; set; }
     public bool isHiding { get; set; }
+    public bool canClimb { get; set; }
 
     [SerializeField] private PlayerData playerData;
 
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
         PlayerIdle = new PlayerIdleState(this, StateController, playerData, "idle");
         PlayerMove = new PlayerMoveState(this, StateController, playerData, "moving");
         PlayerHide = new PlayerHideState(this, StateController, playerData, "hiding");
+        PlayerClimb = new PlayerClimbState(this, StateController, playerData, "climbing");
     }
 
     private void Start()
@@ -46,6 +49,7 @@ public class Player : MonoBehaviour
         playerData.currentStamina = playerData.maxStamina;
         isHiding = false;
         canHide = false;
+        canClimb = false;
         FacingDirection = 1;
 
         StateController.Initialize(PlayerIdle);
@@ -70,6 +74,10 @@ public class Player : MonoBehaviour
         {
             canHide = true;
         }
+        else if(collision.CompareTag("Climbable"))
+        {
+            canClimb = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -77,6 +85,11 @@ public class Player : MonoBehaviour
         if(collision.CompareTag("Hideable"))
         {
             canHide = false;
+        }
+        else if (collision.CompareTag("Climbable"))
+        {
+            canClimb = false;
+            Rb2d.gravityScale = 1;
         }
     }
 }
