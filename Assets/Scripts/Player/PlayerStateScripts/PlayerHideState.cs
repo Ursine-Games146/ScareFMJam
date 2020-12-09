@@ -26,7 +26,7 @@ public class PlayerHideState : PlayerState
     {
         base.LogicUpdate();
 
-        if (Input.GetKeyDown(KeyCode.Space) && (player.canHide = true))
+        if (Input.GetKeyDown(KeyCode.Space) && player.canHide)
         {
             player.isHiding = false;
             player.spriteRenderer.sortingLayerName = "Player";

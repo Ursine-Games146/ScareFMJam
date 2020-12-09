@@ -36,7 +36,7 @@ public class PlayerIdleState : PlayerState
             stateController.ChangeState(player.PlayerMove);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && (player.canHide = true))
+        if(Input.GetKeyDown(KeyCode.Space) && player.canHide)
         {
             stateController.ChangeState(player.PlayerHide);
         }
