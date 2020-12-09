@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 1636458533}
   - component: {fileID: 1636458532}
   m_Layer: 5
-  m_Name: Image
+  m_Name: StaminaBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1861,6 +1861,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6016500656506480358, guid: b108b1140acaa4b42bfcaf648f76ff80,
+        type: 3}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1636458532}
     - target: {fileID: 6016500656506480376, guid: b108b1140acaa4b42bfcaf648f76ff80,
         type: 3}
       propertyPath: m_Name
