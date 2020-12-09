@@ -13,8 +13,41 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID TESTEVENT = 1097980931U;
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GROUNDTYPE
+        {
+            static const AkUniqueID GROUP = 2835351336U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace STATE
+        } // namespace GROUNDTYPE
+
+        namespace LOCOMOTION
+        {
+            static const AkUniqueID GROUP = 556887514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RUNNING = 3863236874U;
+                static const AkUniqueID WALKING = 340271938U;
+            } // namespace STATE
+        } // namespace LOCOMOTION
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID TENSION = 1571361561U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
