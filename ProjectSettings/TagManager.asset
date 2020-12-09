@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Threat
+  - Interactable
+  - Moveable
   layers:
   - Default
   - TransparentFX
@@ -13,12 +17,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Floor
+  - Wall
+  - Player
+  - Enemy
+  - Threat
+  - Background
   - 
   - 
   - 
@@ -40,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3680450531
+    locked: 0
+  - name: Midground
+    uniqueID: 3543634753
+    locked: 0
+  - name: Ground
+    uniqueID: 2386577349
+    locked: 0
+  - name: Enemy
+    uniqueID: 3733649683
+    locked: 0
+  - name: Player
+    uniqueID: 1130695269
+    locked: 0
+  - name: Threat
+    uniqueID: 3777910817
     locked: 0
