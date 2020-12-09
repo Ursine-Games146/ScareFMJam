@@ -47,10 +47,7 @@ public class PlayerState
 
     public virtual void LogicUpdate()
     {
-        if(player.Rb2d.velocity.x != 0f)
-        {
-            stateController.ChangeState(player.PlayerMove);
-        }
+        
     }
 
     public virtual void PhysicsUpdate()

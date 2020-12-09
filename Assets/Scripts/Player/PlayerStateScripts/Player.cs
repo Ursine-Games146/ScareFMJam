@@ -15,7 +15,10 @@ public class Player : MonoBehaviour
 
 
     public Animator Anim { get; private set; }
-    public Rigidbody2D Rb2d { get; set; }
+
+    public Rigidbody2D Rb2d;
+
+    public int FacingDirection { get; set; }
 
     [SerializeField] private PlayerData playerData;
 
@@ -33,6 +36,8 @@ public class Player : MonoBehaviour
     {
         Anim = GetComponent<Animator>();
         Rb2d = GetComponent<Rigidbody2D>();
+
+        FacingDirection = 1;
 
         StateController.Initialize(PlayerIdle);
     }

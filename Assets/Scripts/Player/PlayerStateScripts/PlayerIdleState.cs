@@ -12,6 +12,7 @@ public class PlayerIdleState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.Rb2d.velocity = Vector2.zero;
     }
 
     public override void Exit()
@@ -22,6 +23,11 @@ public class PlayerIdleState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            stateController.ChangeState(player.PlayerMove);
+        }
     }
 
     public override void PhysicsUpdate()
