@@ -12,6 +12,9 @@ public class PlayerHideState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        player.isHiding = true;
+        player.spriteRenderer.sortingLayerName = "Background";
     }
 
     public override void Exit()
@@ -22,6 +25,13 @@ public class PlayerHideState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        if (Input.GetKeyDown(KeyCode.Space) && (player.canHide = true))
+        {
+            player.isHiding = false;
+            player.spriteRenderer.sortingLayerName = "Player";
+            stateController.ChangeState(player.PlayerIdle);
+        }
     }
 
     public override void PhysicsUpdate()

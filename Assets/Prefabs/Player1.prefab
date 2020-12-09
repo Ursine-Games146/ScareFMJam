@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6016500656506480359}
   - component: {fileID: 6016500656506480358}
   m_Layer: 10
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,5 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8344e611d34ec954aa8069d3a23f8cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staminaBar: {fileID: 0}
+  spriteRenderer: {fileID: 6016500656506480324}
   Rb2d: {fileID: 6016500656506480378}
   playerData: {fileID: 11400000, guid: e3e39ad38359e574b88f7f211f305d93, type: 2}

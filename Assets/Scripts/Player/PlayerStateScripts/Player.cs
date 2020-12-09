@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D Rb2d;
 
     public int FacingDirection { get; set; }
+    public bool canHide { get; set; }
+    public bool isHiding { get; set; }
 
     [SerializeField] private PlayerData playerData;
 
@@ -42,7 +44,8 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         playerData.currentStamina = playerData.maxStamina;
-
+        isHiding = false;
+        canHide = false;
         FacingDirection = 1;
 
         StateController.Initialize(PlayerIdle);
@@ -56,5 +59,24 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         StateController.CurrentState.PhysicsUpdate();
+    }
+
+
+    //Functions
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Hideable"))
+        {
+            canHide = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Hideable"))
+        {
+            canHide = false;
+        }
     }
 }

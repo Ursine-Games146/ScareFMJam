@@ -8,6 +8,7 @@ TagManager:
   - Threat
   - Interactable
   - Moveable
+  - Hideable
   layers:
   - Default
   - TransparentFX

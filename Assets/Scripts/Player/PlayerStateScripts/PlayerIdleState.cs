@@ -35,6 +35,11 @@ public class PlayerIdleState : PlayerState
         {
             stateController.ChangeState(player.PlayerMove);
         }
+
+        if(Input.GetKeyDown(KeyCode.Space) && (player.canHide = true))
+        {
+            stateController.ChangeState(player.PlayerHide);
+        }
     }
 
     public override void PhysicsUpdate()
