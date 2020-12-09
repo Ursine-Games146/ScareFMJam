@@ -1,6 +1,1030 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2D0875D4-9D38-4304-A789-1ABC7FBC8022}" SchemaVersion="97">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{2D0875D4-9D38-4304-A789-1ABC7FBC8022}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2D0875D4-9D38-4304-A789-1ABC7FBC8022}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Ambience" ID="{F9877CA2-4827-4914-A8AC-D720C8A58ECA}" ShortID="78743187">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Melody1" ID="{AB2CD55A-50DB-42A2-9AF4-B3452A5C8D2C}" ShortID="601951787">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="56196.75"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="relaxed-drone-bpm120-4_4-25b" ID="{6AD70114-A730-4BBD-B927-2A9CAD8286B1}" ShortID="671063740">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-drone-bpm120-4_4-25b" ID="{7449F89E-3F6F-4969-8359-5C647B03064C}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-drone-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="608564382"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1DEA79FD-A6E6-4983-903A-9F85816DEF46}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{FA48C615-8AAD-4D40-BF44-B1FC41BCDA49}">
+											<ClipList>
+												<MusicClip Name="relaxed-drone-bpm120-4_4-25b" ID="{5DB6A12C-7F6F-4A2D-AE73-CC6FF75184CC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="55242.5416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-drone-bpm120-4_4-25b" ID="{7449F89E-3F6F-4969-8359-5C647B03064C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="relaxed-melody1-bpm120-4_4-25b" ID="{CF0F6FBC-9A7D-4916-96D9-A1E7E6BFABC3}" ShortID="50157737">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{081B15EA-F291-48C0-B95D-CCF00BA11BE1}" ShortID="274447243">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{18ABCDEC-7E6C-47BE-985C-312FDD0D5C06}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>5.98693</XPos>
+																<YPos>0.0671</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-melody1-bpm120-4_4-25b" ID="{719D8438-77CA-4C28-A334-6915B573C50B}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-melody1-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680920391"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8779CEFF-08EA-4BB7-B4FC-EA2438A9C8CE}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{EA463BC8-A03C-4EDC-8F08-5F7B0B166BCF}">
+											<ClipList>
+												<MusicClip Name="relaxed-melody1-bpm120-4_4-25b" ID="{AD177187-2D91-4B01-9B50-09B4AE63C3A5}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="53551.3541666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-melody1-bpm120-4_4-25b" ID="{719D8438-77CA-4C28-A334-6915B573C50B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="relaxed-static-bpm120-4_4-25b_1" ID="{4DAF6485-3496-4222-A435-A979575A995D}" ShortID="466466772">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-static-bpm120-4_4-25b_1" ID="{EC7D6161-5305-450F-9F96-8986764FB1FA}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-static-bpm120-4_4-25b_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="808141806"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{58DE2FF9-17DB-4749-A075-89094089D26D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{20128E4D-A5FA-4F4B-8DD0-F057DAE47A5C}">
+											<ClipList>
+												<MusicClip Name="relaxed-static-bpm120-4_4-25b_1" ID="{0CD8C380-8CBF-47E4-BFE4-690B65D5A3C7}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="49688.6041666667"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="6947.73823851204"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4180.93982494529"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-static-bpm120-4_4-25b_1" ID="{EC7D6161-5305-450F-9F96-8986764FB1FA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-heartbeat-bpm120-4_4-25b" ID="{DE8ED194-8BEC-43A5-8278-34475C85D372}" ShortID="558553563">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{565FBE48-2A71-42F2-8DD2-B9DEA8C76CB4}" ShortID="267010492">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1D751AEC-E07C-44F3-9FA8-E7095BD1BAE5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.97385</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.99346405228758</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-heartbeat-bpm120-4_4-25b" ID="{58CF9649-E5D4-49B2-8F9F-258F9CE19E15}">
+											<Language>SFX</Language>
+											<AudioFile>tense-heartbeat-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="652642359"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5DABA584-3E00-4755-AA90-0B24583A7CA4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{75D6A955-19C0-4AD0-8A96-D896BC013B29}">
+											<ClipList>
+												<MusicClip Name="tense-heartbeat-bpm120-4_4-25b" ID="{5549A079-9ED1-4FC7-A341-F82B6B3753C0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="56196.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-heartbeat-bpm120-4_4-25b" ID="{58CF9649-E5D4-49B2-8F9F-258F9CE19E15}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-hightrem-bpm120-4_4-25b" ID="{BBC3DEEB-FDCC-40CE-94DD-8714FA90BB63}" ShortID="1016111829">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{EC7A821A-94A2-4E5C-A084-F74FEB8592CE}" ShortID="983884103">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{2F450FD3-9A65-4A1B-8073-B7C252AD320C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.96732</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.98039</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-hightrem-bpm120-4_4-25b" ID="{295E468B-96C1-443C-AD9A-A802D3C1F2D2}">
+											<Language>SFX</Language>
+											<AudioFile>tense-hightrem-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="734169552"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7871FEDE-7D6F-407A-8645-6701D76C7EC9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{AD2CBDD8-2C01-42CC-9751-7BFA5E83B05C}">
+											<ClipList>
+												<MusicClip Name="tense-hightrem-bpm120-4_4-25b" ID="{BCF90E60-88CC-42BA-B25C-95B0A61AE64E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="52667.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-hightrem-bpm120-4_4-25b" ID="{295E468B-96C1-443C-AD9A-A802D3C1F2D2}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-lowtrem-bpm120-4_4-25b" ID="{2B8B380C-CC9A-4436-9A95-1166BCF93BB9}" ShortID="274133610">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{86017FD0-42C4-4677-B096-3219A7B2E9C1}" ShortID="51062574">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4140F006-BE48-4CD4-85D6-94F029612332}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.54902</XPos>
+																<YPos>-0.12321</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>7.55556</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-lowtrem-bpm120-4_4-25b" ID="{55F2AD38-794D-4337-86CC-9D23501FA51B}">
+											<Language>SFX</Language>
+											<AudioFile>tense-lowtrem-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1029464789"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7A86D4C3-1CEB-4137-A62B-CE778C0C0740}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CE1ED244-73EE-40F9-8BF2-F9A7AEB3FFA6}">
+											<ClipList>
+												<MusicClip Name="tense-lowtrem-bpm120-4_4-25b" ID="{2297D805-A023-48D2-8A58-2261794934C6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="50352.7916666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-lowtrem-bpm120-4_4-25b" ID="{55F2AD38-794D-4337-86CC-9D23501FA51B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-melody-bpm120-4_4-25b" ID="{EE507038-FDBC-4D16-A378-A63B81482F88}" ShortID="444542466">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{E23C3ECB-05C8-43BF-BC61-834C2B4D5CE4}" ShortID="1040364554">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C53CCF1F-8F98-4BEA-B66D-D026C6A95528}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.43791</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.98039</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-melody-bpm120-4_4-25b" ID="{D88DB294-5A37-4D2D-9CFF-683B64A7DCB9}">
+											<Language>SFX</Language>
+											<AudioFile>tense-melody-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301996638"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7B87A3E2-5586-4C45-BE19-6EA8CC5EC535}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E1429473-B483-48F4-83F4-94E564CFDE0E}">
+											<ClipList>
+												<MusicClip Name="tense-melody-bpm120-4_4-25b" ID="{30475075-EC64-4C59-8769-81E9BC4686F0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="49283.5625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-melody-bpm120-4_4-25b" ID="{D88DB294-5A37-4D2D-9CFF-683B64A7DCB9}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{C42BA5BA-90D2-4DA9-A1E5-0E1009759B5A}"/>
+								<MusicCue Name="Exit Cue" ID="{4C518E93-7F4B-4C10-9715-F37D819D3D6D}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="48000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Melody2" ID="{227D3E70-F08C-4875-877B-BE201DB3216A}" ShortID="287802436">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="56196.75"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="relaxed-drone-bpm120-4_4-25b" ID="{B3A8CD95-8055-42EF-8FDD-DE1B539E9AAA}" ShortID="1038105471">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-drone-bpm120-4_4-25b" ID="{FC9D0AFC-7302-4E46-8643-EEB119FE3092}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-drone-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="608564382"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5C497932-D3F8-416A-A5BA-1B26AF468A02}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E0774653-9E31-4244-8CB0-1FFCBE1F8C8B}">
+											<ClipList>
+												<MusicClip Name="relaxed-drone-bpm120-4_4-25b" ID="{FC591997-D70A-48FA-9422-F05212367678}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="55242.5416666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-drone-bpm120-4_4-25b" ID="{FC9D0AFC-7302-4E46-8643-EEB119FE3092}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="relaxed-melody2-bpm120-4_4-25b" ID="{6F00F37F-2EC7-451F-8A0B-B38B2F14E18F}" ShortID="470255485">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{91B09F3F-06D2-445F-9213-6B8AF764A74D}" ShortID="191649709">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3977ABFB-D1E9-4FAA-8D4F-BD208DA56CC3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>7</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-melody2-bpm120-4_4-25b" ID="{38D9F763-668A-411F-B9C8-69653DAC76F8}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-melody2-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="942059619"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B7E9C062-05CC-42B3-AC6D-B18BE46EBF3F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{4FE4841F-8566-497F-8E3A-E9C7A600550C}">
+											<ClipList>
+												<MusicClip Name="relaxed-melody2-bpm120-4_4-25b" ID="{A3D1E361-F9E9-47BF-B452-44AF8626F014}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="53905.625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-melody2-bpm120-4_4-25b" ID="{38D9F763-668A-411F-B9C8-69653DAC76F8}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="relaxed-static-bpm120-4_4-25b_1" ID="{8EFDBAA3-3A4F-4A64-9EC6-A84A3B26C3A9}" ShortID="357021352">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="relaxed-static-bpm120-4_4-25b_1" ID="{6CEFBCF2-C068-4FC4-8C1B-6E2125D520CA}">
+											<Language>SFX</Language>
+											<AudioFile>relaxed-static-bpm120-4_4-25b_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="808141806"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{456651DF-02EB-4ED4-8C63-CEDA6970B700}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{71915910-9F50-42E2-9067-EED5B0F2EDBB}">
+											<ClipList>
+												<MusicClip Name="relaxed-static-bpm120-4_4-25b_1" ID="{4CA21621-8F9B-482C-943F-F7B19564879B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="49688.6041666667"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="7439.61351203501"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5041.7215536105"/>
+													</PropertyList>
+													<AudioSourceRef Name="relaxed-static-bpm120-4_4-25b_1" ID="{6CEFBCF2-C068-4FC4-8C1B-6E2125D520CA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-heartbeat-bpm120-4_4-25b" ID="{93B39DCC-9B1E-4B00-8309-8BF909CA1582}" ShortID="37040868">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{4030D3D8-C25C-4F1E-84A6-D7194EB87561}" ShortID="424417499">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{70FA01E3-9E28-4188-9022-2AE783316727}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.97385</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.99346405228758</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-heartbeat-bpm120-4_4-25b" ID="{4302137E-A6B2-4712-8B21-090EA63EC3B5}">
+											<Language>SFX</Language>
+											<AudioFile>tense-heartbeat-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="652642359"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C72175E1-9F02-4150-BE64-FB2E910A8E8A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{5BE354D6-211D-4D88-8388-A21AB4CAE2AC}">
+											<ClipList>
+												<MusicClip Name="tense-heartbeat-bpm120-4_4-25b" ID="{1E82686A-C920-4E28-9DCB-D491F168FA8B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="56196.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-heartbeat-bpm120-4_4-25b" ID="{4302137E-A6B2-4712-8B21-090EA63EC3B5}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-hightrem-bpm120-4_4-25b" ID="{B7B878D7-D58B-4782-881D-727DCC4801C6}" ShortID="163541298">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{1912B6BB-655B-4341-8ED6-14FDB7BF2DF0}" ShortID="1035343820">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{66B4B054-C07F-4F25-BC92-2A5E0F8FBF59}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.96732</XPos>
+																<YPos>-0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.98039</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-hightrem-bpm120-4_4-25b" ID="{C25739EE-6CF7-45E2-A818-A229FD0DF423}">
+											<Language>SFX</Language>
+											<AudioFile>tense-hightrem-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="734169552"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{45679AC7-3831-4DB4-8079-BB12C85E9893}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E816595E-6BD7-42F2-A721-509628707498}">
+											<ClipList>
+												<MusicClip Name="tense-hightrem-bpm120-4_4-25b" ID="{CD06FF38-CF44-4CA5-B1AE-6236A3067C33}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="52667.75"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-hightrem-bpm120-4_4-25b" ID="{C25739EE-6CF7-45E2-A818-A229FD0DF423}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-lowtrem-bpm120-4_4-25b" ID="{DC67A099-5690-486C-B675-8A15FC71EE97}" ShortID="70704582">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{80D77525-65FA-42DA-BBE6-B4CEB98FA336}" ShortID="494130053">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{EF2EDFE7-8217-46E8-B803-083338AD09CE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.54902</XPos>
+																<YPos>-0.12321</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>7.55556</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-lowtrem-bpm120-4_4-25b" ID="{A0968C81-6E88-44A2-AFD5-516557E5E97A}">
+											<Language>SFX</Language>
+											<AudioFile>tense-lowtrem-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1029464789"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{27432388-1944-43C5-AC7B-A257CA39C6D4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{74655BAB-1366-404D-96B1-B6CF85F83987}">
+											<ClipList>
+												<MusicClip Name="tense-lowtrem-bpm120-4_4-25b" ID="{DB7E8EAD-FE10-4995-B8B2-6F63790D77AD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="50352.7916666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-lowtrem-bpm120-4_4-25b" ID="{A0968C81-6E88-44A2-AFD5-516557E5E97A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="tense-melody-bpm120-4_4-25b" ID="{9B48A2E9-E4A8-46F5-BE7D-3EEB33B944D5}" ShortID="851200061">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{F901713D-74F8-43C5-8E59-1EC355C387D0}" ShortID="378286866">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}" WorkUnitID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4704EF21-1842-4242-A530-5D8704ACDE23}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.43791</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>6.98039</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="tense-melody-bpm120-4_4-25b" ID="{7AA4DBA6-E08B-473A-8697-93EC576BACCE}">
+											<Language>SFX</Language>
+											<AudioFile>tense-melody-bpm120-4_4-25b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301996638"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1C42C389-899E-4D0B-A612-12D7FC1CEEAA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{92664148-8F2C-4DA4-9346-AE37E0F892FF}">
+											<ClipList>
+												<MusicClip Name="tense-melody-bpm120-4_4-25b" ID="{0063EDC2-2980-4778-954C-05C3D8F4C569}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="49283.5625"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="tense-melody-bpm120-4_4-25b" ID="{7AA4DBA6-E08B-473A-8697-93EC576BACCE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{013774A4-44FD-4627-B5AF-1F4C5AB2E328}"/>
+								<MusicCue Name="Exit Cue" ID="{ED571A05-AFF4-48D1-8285-B518C9C782F5}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="48000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{34A49800-E100-43B6-A2C2-95FCF56E712A}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{05D799FA-B631-481D-8DA4-C6DF4201C3BE}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{CC90B52F-E59F-4FA2-9842-1BD2A3DDB96E}" ShortID="1053561356">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{C6D3975F-CD81-47A0-B552-D76A46AC3D9B}" ShortID="360377419">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Melody1" ID="{AB2CD55A-50DB-42A2-9AF4-B3452A5C8D2C}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{2D289DC2-D316-4FBD-9D27-455B5F496BCD}" ShortID="926677035">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Melody2" ID="{227D3E70-F08C-4875-877B-BE201DB3216A}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

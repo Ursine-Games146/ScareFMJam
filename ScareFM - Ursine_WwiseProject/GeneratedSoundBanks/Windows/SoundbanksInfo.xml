@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2818924219">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4250925343">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" DurationType="OneShot" DurationMin="112.393501" DurationMax="112.393501">
 					<IncludedMemoryFiles>
 						<File Id="301996638" Language="SFX">
 							<ShortName>tense-melody-bpm120-4_4-25b.wav</ShortName>

@@ -3,12 +3,23 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{6B951019-BA39-4414-A705-3E2529C37A01}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TestEvent" ID="{A8E426F9-5AE2-4E51-AD30-E214864246FE}">
+				<Event Name="Play_Footsteps" ID="{36AE1E5C-3B17-4963-9E8C-27872EC0CD82}">
 					<ChildrenList>
-						<Action Name="" ID="{2B31E755-0491-48FC-9500-8BB906B69EEC}" ShortID="498922690">
+						<Action Name="" ID="{53F1EF56-6835-4258-8932-71620F73DF1C}" ShortID="300714983">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="155589__leafs67__walking-in-long-grass" ID="{83ABFA03-4AD4-4C43-99FD-648D6E1DAB30}" WorkUnitID="{1F320600-AA00-42EF-A3B7-16080E917D37}"/>
+									<ObjectRef Name="Footsteps" ID="{0559F081-9FCA-4E47-9E81-135E78C5AD16}" WorkUnitID="{1F320600-AA00-42EF-A3B7-16080E917D37}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience" ID="{35240E2C-5920-4AD1-803A-0415B7771575}">
+					<ChildrenList>
+						<Action Name="" ID="{47688AD1-FB0B-4FD6-8CFD-5CEF6CB9E06C}" ShortID="399056320">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{F9877CA2-4827-4914-A8AC-D720C8A58ECA}" WorkUnitID="{2D0875D4-9D38-4304-A789-1ABC7FBC8022}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

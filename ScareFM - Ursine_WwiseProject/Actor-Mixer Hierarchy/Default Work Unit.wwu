@@ -3,35 +3,29 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1F320600-AA00-42EF-A3B7-16080E917D37}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="WHGA1 - Wood" ID="{0C315DAF-881A-4686-836B-340D2F8B0A33}" ShortID="961110477">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="WHGA1 - Wood" ID="{187C056D-FB7E-4930-8FC8-3F5973B57883}">
-							<Language>SFX</Language>
-							<AudioFile>WHGA1 - Wood.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="220580282"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="WHGA1 - Wood" ID="{187C056D-FB7E-4930-8FC8-3F5973B57883}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<SwitchContainer Name="Footsteps" ID="{0559F081-9FCA-4E47-9E81-135E78C5AD16}" ShortID="569933523">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Walking" ID="{76CA4181-A454-46B6-B7D4-3F02C87F1349}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Locomotion" ID="{A37F5F5D-7996-406A-BE67-D39DD2F602DE}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -40,8 +34,14 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Wood" ID="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundType" ID="{4372EAE0-201D-4A1A-865D-61287FEF9640}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -54,6 +54,260 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="walking_wood" ID="{0C315DAF-881A-4686-836B-340D2F8B0A33}" ShortID="961110477">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{187C056D-FB7E-4930-8FC8-3F5973B57883}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.455136858878503"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="220580282"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{187C056D-FB7E-4930-8FC8-3F5973B57883}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_01" ID="{3748761F-BC9C-4736-BCE4-BBA1D44F6747}" ShortID="948931711">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{1C04B079-925B-4916-94F5-4E482ED87ECF}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.01789212190746"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.64952068599683"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1041086336"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{1C04B079-925B-4916-94F5-4E482ED87ECF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_02" ID="{DF576029-F6BC-43C8-8BD6-11732774AA61}" ShortID="131917354">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{B5865C83-C5E1-4942-9BC3-53D8010960E6}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.69339363534416"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.27589481663813"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="923579909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{B5865C83-C5E1-4942-9BC3-53D8010960E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_03" ID="{5D94F395-D6AF-4C82-ADF1-3B60AEC31BE9}" ShortID="1000731944">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{AD2CE004-92EB-4CF0-9267-923B72AB7C6E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.30843067764806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.85125204976114"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="971105550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{AD2CE004-92EB-4CF0-9267-923B72AB7C6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_04" ID="{D984B67D-60B6-4C83-8781-DAC8854215FD}" ShortID="868295588">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{897BF703-B2E2-4202-A365-EDE0A9D221FA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.90362781536151"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.62713403285189"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="850922407"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{897BF703-B2E2-4202-A365-EDE0A9D221FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_05" ID="{A061CEAA-15DE-46BB-BED4-7407BEB0E3B8}" ShortID="726454413">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{D128AF39-1444-4BFF-ACC8-2A299C87A8D9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.60794442832243"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.24760342998413"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="663707689"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{D128AF39-1444-4BFF-ACC8-2A299C87A8D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_06" ID="{F8D24B46-36AE-4D91-B121-4F1D21BD71C4}" ShortID="37872145">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{C51845BE-8F46-4323-A955-F937202218FF}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.29903443822306"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.92971824495098"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512054628"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{C51845BE-8F46-4323-A955-F937202218FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_07" ID="{4CF27A37-39D4-4118-82E1-0B6FE3BD31FE}" ShortID="536819071">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{DE0B214C-55AB-4FE8-B398-DC6220B2DE7B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.93202187039451"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.56270567712243"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="425243737"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{DE0B214C-55AB-4FE8-B398-DC6220B2DE7B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="walking_wood_08" ID="{F11A9ADA-0ACB-45EA-87E6-8581D01DA361}" ShortID="511539785">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{0C009643-8FE5-4CEE-B2DE-02608FFD607E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.36482341031757"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.9501588636959"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="518892867"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{0C009643-8FE5-4CEE-B2DE-02608FFD607E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
@@ -62,6 +316,14 @@
 										<ItemRef Name="Wood" ID="{A25C22B4-454C-48B1-9B76-C6CF645BB710}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{A25C22B4-454C-48B1-9B76-C6CF645BB710}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Running" ID="{B8CF2CF2-81F6-49C6-BC3F-6B02D3BC9F1E}" ShortID="993532723">
@@ -69,8 +331,14 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Wood" ID="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="GroundType" ID="{4372EAE0-201D-4A1A-865D-61287FEF9640}" WorkUnitID="{6030170B-C678-401C-8887-35E86FA850D0}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -83,6 +351,287 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="running_wood" ID="{86C28CAF-AEFB-49D0-B375-6A170FE5402B}" ShortID="214810630">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{34C31D18-AD7C-4C46-AAF6-3331297C4492}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="54.5568194165941"/>
+														<Property Name="TrimEnd" Type="Real64" Value="54.9704084233271"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509424049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{34C31D18-AD7C-4C46-AAF6-3331297C4492}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_01" ID="{9AF871AB-15D1-46F2-81AD-9DFEE3F370FA}" ShortID="722242899">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{22EF14F1-8E95-4528-A81D-3EE5140B2820}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="54.9741659810146"/>
+														<Property Name="TrimEnd" Type="Real64" Value="55.3218581617865"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="498911475"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{22EF14F1-8E95-4528-A81D-3EE5140B2820}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_02" ID="{475482AB-F82F-439A-B9F3-D03E1F9E4D2C}" ShortID="1029861603">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{0CC569A7-E940-4DF2-B5CD-CA022E48201D}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="55.3410683261805"/>
+														<Property Name="TrimEnd" Type="Real64" Value="55.7283056029104"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="4014009"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{0CC569A7-E940-4DF2-B5CD-CA022E48201D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_03" ID="{98ACD452-7972-4E5F-99FA-D21F227979CA}" ShortID="795017285">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{9BCA1A64-8981-4FEF-8017-C0D763A6168D}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="55.7284188443749"/>
+														<Property Name="TrimEnd" Type="Real64" Value="56.1350236470146"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="991986942"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{9BCA1A64-8981-4FEF-8017-C0D763A6168D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_04" ID="{215403D9-E360-4F54-97F7-65A6E0B35C87}" ShortID="638765296">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{A6E4BB8E-25EF-4BA5-8C17-21D14064B945}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="56.1252169361839"/>
+														<Property Name="TrimEnd" Type="Real64" Value="56.5530787794562"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123534456"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{A6E4BB8E-25EF-4BA5-8C17-21D14064B945}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_05" ID="{CC446D52-5F7D-4EEE-B319-399E86EE9EB7}" ShortID="904975743">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{BC9B0AFE-E11E-4814-9653-003357C8B596}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="56.5498853701556"/>
+														<Property Name="TrimEnd" Type="Real64" Value="56.9777472134279"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="258945746"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{BC9B0AFE-E11E-4814-9653-003357C8B596}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_06" ID="{C7366177-3267-43E1-8C29-DD247379AFC3}" ShortID="415617905">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{CA34C036-DD26-4E12-A5EA-F365E6B7CF17}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="56.9797499696153"/>
+														<Property Name="TrimEnd" Type="Real64" Value="57.4142251144178"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="753769800"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{CA34C036-DD26-4E12-A5EA-F365E6B7CF17}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_07" ID="{410A37EE-6E9C-4E27-AA36-A9215DFA4D7E}" ShortID="875953254">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{2E45FBFD-235A-445D-965B-0F919AB0D5B4}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="57.4275649589426"/>
+														<Property Name="TrimEnd" Type="Real64" Value="57.788349029552"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="731693796"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{2E45FBFD-235A-445D-965B-0F919AB0D5B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="running_wood_08" ID="{7E42DB78-4883-4608-B495-675E73C1BEA3}" ShortID="342877060">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHGA1 - Wood" ID="{9DB7E332-DC92-4450-8A82-AD8B51E77759}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0774701036388941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="57.7643709582995"/>
+														<Property Name="TrimEnd" Type="Real64" Value="58.315523637241"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHGA1 - Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="303241862"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHGA1 - Wood" ID="{9DB7E332-DC92-4450-8A82-AD8B51E77759}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
@@ -91,6 +640,14 @@
 										<ItemRef Name="Wood" ID="{CD73F8F5-7993-4987-BE44-991A6B8F08D7}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{CD73F8F5-7993-4987-BE44-991A6B8F08D7}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
@@ -103,6 +660,20 @@
 								<ItemRef Name="Running" ID="{B8CF2CF2-81F6-49C6-BC3F-6B02D3BC9F1E}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Walking" ID="{76CA4181-A454-46B6-B7D4-3F02C87F1349}"/>
+								<ItemList>
+									<ItemRef Name="Walking" ID="{5B548004-2C07-49DF-ACCE-A43E349ECC22}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Running" ID="{3672C2D6-58F4-482C-89CA-4761F6277278}"/>
+								<ItemList>
+									<ItemRef Name="Running" ID="{B8CF2CF2-81F6-49C6-BC3F-6B02D3BC9F1E}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 			</ChildrenList>
