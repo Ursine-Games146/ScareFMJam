@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
 
 
     public Animator Anim { get; private set; }
+
+    public Image staminaBar;
 
     public Rigidbody2D Rb2d;
 

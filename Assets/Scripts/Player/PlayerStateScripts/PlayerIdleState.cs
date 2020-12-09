@@ -24,6 +24,13 @@ public class PlayerIdleState : PlayerState
     {
         base.LogicUpdate();
 
+        playerData.currentStamina += 0.5f * Time.deltaTime;
+        player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
+        if(playerData.currentStamina > playerData.maxStamina)
+        {
+            playerData.currentStamina = playerData.maxStamina;
+        }
+
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             stateController.ChangeState(player.PlayerMove);

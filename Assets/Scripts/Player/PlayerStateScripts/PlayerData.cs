@@ -8,6 +8,6 @@ public class PlayerData : ScriptableObject
     public float moveSpeed = 7.0f;
     public float runSpeed = 10.0f;
     public float climbSpeed = 5.0f;
-    public float maxStamina = 10.0f;
+    public float maxStamina = 5.0f;
     public float currentStamina;
 }

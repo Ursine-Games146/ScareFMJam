@@ -51,6 +51,8 @@ public class PlayerMoveState : PlayerState
 
         if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
+            playerData.currentStamina -= 0.5f * Time.deltaTime;
+            player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             scale = player.transform.localScale;
             scale.y = 1;
             X.x = playerData.runSpeed;
@@ -58,6 +60,9 @@ public class PlayerMoveState : PlayerState
         }
         else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
+
+            playerData.currentStamina -= 0.5f * Time.deltaTime;
+            player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             scale = player.transform.localScale;
             scale.y = -1;
             X.x = playerData.runSpeed * -1;
@@ -65,7 +70,7 @@ public class PlayerMoveState : PlayerState
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina <= 0)
         {
-            X.x = playerData.moveSpeed;
+            X.x = 0;
             player.Rb2d.velocity = X;
         }
         
