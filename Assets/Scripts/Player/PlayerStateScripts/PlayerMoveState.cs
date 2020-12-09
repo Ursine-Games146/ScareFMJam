@@ -47,14 +47,28 @@ public class PlayerMoveState : PlayerState
         {
             stateController.ChangeState(player.PlayerIdle);
         }
-        else if (Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
+
+
+        if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
-            player.Rb2d.velocity = new Vector2(X.x + playerData.runSpeed, 0.0f);
+            scale = player.transform.localScale;
+            scale.y = 1;
+            X.x = playerData.runSpeed;
+            player.Rb2d.velocity = X;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina == 0)
+        else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
         {
-            return;
+            scale = player.transform.localScale;
+            scale.y = -1;
+            X.x = playerData.runSpeed * -1;
+            player.Rb2d.velocity = X;
         }
+        else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina <= 0)
+        {
+            X.x = playerData.moveSpeed;
+            player.Rb2d.velocity = X;
+        }
+        
 
     }
 
