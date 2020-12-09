@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B951019-BA39-4414-A705-3E2529C37A01}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6B951019-BA39-4414-A705-3E2529C37A01}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="TestEvent" ID="{A8E426F9-5AE2-4E51-AD30-E214864246FE}">
+					<ChildrenList>
+						<Action Name="" ID="{2B31E755-0491-48FC-9500-8BB906B69EEC}" ShortID="498922690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="155589__leafs67__walking-in-long-grass" ID="{83ABFA03-4AD4-4C43-99FD-648D6E1DAB30}" WorkUnitID="{1F320600-AA00-42EF-A3B7-16080E917D37}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

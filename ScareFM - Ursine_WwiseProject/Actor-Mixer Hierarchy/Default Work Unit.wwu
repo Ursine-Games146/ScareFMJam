@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1F320600-AA00-42EF-A3B7-16080E917D37}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1F320600-AA00-42EF-A3B7-16080E917D37}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="155589__leafs67__walking-in-long-grass" ID="{83ABFA03-4AD4-4C43-99FD-648D6E1DAB30}" ShortID="188493985">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DA667A6-84B4-4926-AA8C-285CC5B342A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AB0D0A2-8DC0-49DE-9278-686FA122E46B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="155589__leafs67__walking-in-long-grass" ID="{F821C689-B454-49F2-AA3C-CA58E89BB2F5}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.457191780821919"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>155589__leafs67__walking-in-long-grass.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="465951901"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="155589__leafs67__walking-in-long-grass" ID="{F821C689-B454-49F2-AA3C-CA58E89BB2F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

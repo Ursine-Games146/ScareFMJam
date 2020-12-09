@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="999520447">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1097980931" Name="TestEvent" ObjectPath="\Events\Default Work Unit\TestEvent" DurationType="OneShot" DurationMin="0.457192" DurationMax="0.457192">
+					<IncludedMemoryFiles>
+						<File Id="465951901" Language="SFX">
+							<ShortName>155589__leafs67__walking-in-long-grass.wav</ShortName>
+							<Path>SFX\155589__leafs67__walking-in-long-grass_CEE052B2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
