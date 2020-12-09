@@ -31,12 +31,14 @@ public class PlayerMoveState : PlayerState
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             player.spriteRenderer.flipX = false;
+            player.Anim.speed = 1.0f;
             X.x = playerData.moveSpeed;
             player.Rb2d.velocity = X;
         }
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             player.spriteRenderer.flipX = true;
+            player.Anim.speed = 1.0f;
             X.x = playerData.moveSpeed * -1;
             player.Rb2d.velocity = X;
         }
@@ -51,6 +53,7 @@ public class PlayerMoveState : PlayerState
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             player.spriteRenderer.flipX = false;
+            player.Anim.speed = 1.5f;
             X.x = playerData.runSpeed;
             player.Rb2d.velocity = X;
         }
@@ -60,6 +63,7 @@ public class PlayerMoveState : PlayerState
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             player.spriteRenderer.flipX = true;
+            player.Anim.speed = 1.5f;
             X.x = playerData.runSpeed * -1;
             player.Rb2d.velocity = X;
         }

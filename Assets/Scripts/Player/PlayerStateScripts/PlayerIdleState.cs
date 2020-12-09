@@ -13,6 +13,7 @@ public class PlayerIdleState : PlayerState
     {
         base.Enter();
         player.Rb2d.velocity = Vector2.zero;
+        player.Anim.speed = 1.0f;
     }
 
     public override void Exit()
