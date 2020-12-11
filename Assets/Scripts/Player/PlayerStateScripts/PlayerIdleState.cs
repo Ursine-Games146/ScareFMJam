@@ -13,6 +13,7 @@ public class PlayerIdleState : PlayerState
     {
         base.Enter();
         player.Rb2d.velocity = Vector2.zero;
+        player.Anim.speed = 1.0f;
     }
 
     public override void Exit()
@@ -34,6 +35,16 @@ public class PlayerIdleState : PlayerState
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             stateController.ChangeState(player.PlayerMove);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && player.canHide)
+        {
+            stateController.ChangeState(player.PlayerHide);
+        }
+
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S) && player.canClimb)
+        {
+            stateController.ChangeState(player.PlayerClimb);
         }
     }
 

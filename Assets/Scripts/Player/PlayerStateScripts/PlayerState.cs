@@ -9,6 +9,7 @@ public class PlayerState
     protected PlayerIdleState playerIdle;
     protected PlayerMoveState playerMove;
     protected PlayerHideState playerHide;
+    protected PlayerClimbState playerClimb;
     protected PlayerData playerData;
     protected Player player;
 
