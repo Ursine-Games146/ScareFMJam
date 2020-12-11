@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba5c0b96d0faf74496e5a1d8528b6de, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3bb98150ebf23145b5bc2c9c6cb1fb39
+    GuidInternal: 
+    m_lastTime: -8585940662427642232
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: a2d0b05ac08dde499278686fa122e46b
+    GuidInternal: 
+    m_lastTime: -8585940662427717432
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 6186d9222a4d8b4baec521f1bea36b55
+    GuidInternal: 
+    m_lastTime: -8585940639840908878
+    List:
+    - name: Main
+      guid: 25998edfcfb4a14c89a92e0191249163
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 1910956b39ba1444a7053e2529c37a01
+    GuidInternal: 
+    m_lastTime: -8585940639841234756
+    List:
+    - name: Play_Ambience
+      guid: 2c0e24352059d14a803a0415b7771575
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: 112.3935
+      minDuration: 112.3935
+    - name: Play_Footsteps
+      guid: 5c1eae36173b63499e8c27872ec0cd82
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.723506
+      minDuration: 0.347692
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 81fc496dd1389141af85b561695c9e0d
+    GuidInternal: 
+    m_lastTime: -8585940639840282074
+    List:
+    - name: Tension
+      guid: 2ed490dad617604f97d1a417a981e305
+      id: 1571361561
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tension
+        ObjectType: 13
+      Path: Default Work Unit\Tension
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 0b17306078c61c40888735e86fa850d0
+    GuidInternal: 
+    m_lastTime: -8585940639841064299
+    List:
+    - name: GroundType
+      guid: e0ea72431d201a4a865d61287fef9640
+      id: 2835351336
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GroundType
+        ObjectType: 9
+      Path: Default Work Unit\GroundType
+      values:
+      - name: None
+        guid: 031b1a5b23d105498574bb80d1bfd231
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Wood
+        guid: c182c9254dfdb74e89bd0d8bcd80e6c2
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Locomotion
+      guid: 5d5f7fa396796a40be67d39dd2f602de
+      id: 556887514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Locomotion
+        ObjectType: 9
+      Path: Default Work Unit\Locomotion
+      values:
+      - name: None
+        guid: dfb9004c0d502446be18ee069bab777a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Running
+        guid: d6c27236f4582c4889ca4761f6277278
+        id: 3863236874
+        PathAndIcons:
+        - ElementName: Running
+          ObjectType: 8
+      - name: Walking
+        guid: 8141ca7654a4b646b7d43f02c87f1349
+        id: 340271938
+        PathAndIcons:
+        - ElementName: Walking
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 23c446cab270b6489243e42fcc15a12e
+    GuidInternal: 
+    m_lastTime: -8585940662427652260
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 4e33af913b52c14a847279a1abf3871a
+    GuidInternal: 
+    m_lastTime: -8585940662427647242
+    List: []
+  ExpandedItems:
+  - /ScareFM - Ursine_WwiseProject
+  - /ScareFM - Ursine_WwiseProject/Events
+  - /ScareFM - Ursine_WwiseProject/Events/Default Work Unit
+  - /ScareFM - Ursine_WwiseProject/States
+  - /ScareFM - Ursine_WwiseProject/States/Default Work Unit
+  - /ScareFM - Ursine_WwiseProject/States/Default Work Unit/GroundType
+  - /ScareFM - Ursine_WwiseProject/States/Default Work Unit/Locomotion
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

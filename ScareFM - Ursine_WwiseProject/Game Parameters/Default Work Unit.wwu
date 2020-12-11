@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{6D49FC81-38D1-4191-AF85-B561695C9E0D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Tension" ID="{DA90D42E-17D6-4F60-97D1-A417A981E305}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6030170B-C678-401C-8887-35E86FA850D0}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{6030170B-C678-401C-8887-35E86FA850D0}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Locomotion" ID="{A37F5F5D-7996-406A-BE67-D39DD2F602DE}">
+					<ChildrenList>
+						<State Name="None" ID="{4C00B9DF-500D-4624-BE18-EE069BAB777A}"/>
+						<State Name="Walking" ID="{76CA4181-A454-46B6-B7D4-3F02C87F1349}"/>
+						<State Name="Running" ID="{3672C2D6-58F4-482C-89CA-4761F6277278}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GroundType" ID="{4372EAE0-201D-4A1A-865D-61287FEF9640}">
+					<ChildrenList>
+						<State Name="None" ID="{5B1A1B03-D123-4905-8574-BB80D1BFD231}"/>
+						<State Name="Wood" ID="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

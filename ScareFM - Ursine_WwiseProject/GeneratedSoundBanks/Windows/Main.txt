@@ -1,0 +1,49 @@
+Event	ID	Name			Wwise Object Path	Notes
+	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	556887514	Locomotion			\Default Work Unit\Locomotion	
+	2835351336	GroundType			\Default Work Unit\GroundType	
+
+State	ID	Name	State Group			Notes
+	340271938	Walking	Locomotion			
+	748895195	None	Locomotion			
+	3863236874	Running	Locomotion			
+	748895195	None	GroundType			
+	2058049674	Wood	GroundType			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1571361561	Tension			\Default Work Unit\Tension	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2652646462	Dialog_Leveler_Soft	Wwise Compressor			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4014009	running_wood_02	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_96931D02.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_02		4279
+	123534456	running_wood_04	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_6EBDC28F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_04		4159
+	220580282	walking_wood	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_D542B7E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood		4935
+	258945746	running_wood_05	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_E5F4E7C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_05		4379
+	301996638	tense-melody-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\tense-melody-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\tense-melody-bpm120-4_4-25b		565105
+	303241862	running_wood_08	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_CA544DEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_08		5269
+	425243737	walking_wood_07	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_3CF50C59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_07		5789
+	498911475	running_wood_01	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_582D36A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_01		3455
+	509424049	running_wood	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_6D008C18.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood		4136
+	512054628	walking_wood_06	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_92B17DC2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_06		5630
+	518892867	walking_wood_08	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_B74613D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_08		5273
+	608564382	relaxed-drone-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\relaxed-drone-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\relaxed-drone-bpm120-4_4-25b		550204
+	652642359	tense-heartbeat-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\tense-heartbeat-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\tense-heartbeat-bpm120-4_4-25b		506926
+	663707689	walking_wood_05	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_714D35BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_05		5886
+	680920391	relaxed-melody1-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\relaxed-melody1-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\relaxed-melody1-bpm120-4_4-25b		483836
+	731693796	running_wood_07	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_6EDFB823.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_07		3544
+	734169552	tense-hightrem-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\tense-hightrem-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\tense-hightrem-bpm120-4_4-25b		605512
+	753769800	running_wood_06	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_B59BA988.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_06		4431
+	808141806	relaxed-static-bpm120-4_4-25b_1	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\relaxed-static-bpm120-4_4-25b_1_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\relaxed-static-bpm120-4_4-25b_1		452376
+	850922407	walking_wood_04	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_60466D87.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_04		6764
+	923579909	walking_wood_02	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_89D250B6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_02		5751
+	942059619	relaxed-melody2-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\relaxed-melody2-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody2\relaxed-melody2-bpm120-4_4-25b		479554
+	971105550	walking_wood_03	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_E509B982.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_03		5172
+	991986942	running_wood_03	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_D0C68F61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Running\Wood\running_wood_03		4163
+	1029464789	tense-lowtrem-bpm120-4_4-25b	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\tense-lowtrem-bpm120-4_4-25b_696A9007.wem		\Interactive Music Hierarchy\Default Work Unit\Ambience\Melody1\tense-lowtrem-bpm120-4_4-25b		603440
+	1041086336	walking_wood_01	C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Windows\SFX\WHGA1 - Wood_4511D4D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Walking\Wood\walking_wood_01		5708
+

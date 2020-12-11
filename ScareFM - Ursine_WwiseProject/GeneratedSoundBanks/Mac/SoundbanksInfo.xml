@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Jake\Documents\Unity\ScareFM - Ursine\ScareFM - Ursine_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2508213798">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3974314758">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="301996638" Language="SFX">
+							<ShortName>tense-melody-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\tense-melody-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="608564382" Language="SFX">
+							<ShortName>relaxed-drone-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\relaxed-drone-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="652642359" Language="SFX">
+							<ShortName>tense-heartbeat-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\tense-heartbeat-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="680920391" Language="SFX">
+							<ShortName>relaxed-melody1-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\relaxed-melody1-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="734169552" Language="SFX">
+							<ShortName>tense-hightrem-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\tense-hightrem-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="808141806" Language="SFX">
+							<ShortName>relaxed-static-bpm120-4_4-25b_1.wav</ShortName>
+							<Path>SFX\relaxed-static-bpm120-4_4-25b_1_696A9007.wem</Path>
+						</File>
+						<File Id="942059619" Language="SFX">
+							<ShortName>relaxed-melody2-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\relaxed-melody2-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+						<File Id="1029464789" Language="SFX">
+							<ShortName>tense-lowtrem-bpm120-4_4-25b.wav</ShortName>
+							<Path>SFX\tense-lowtrem-bpm120-4_4-25b_696A9007.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.347692" DurationMax="0.723506">
+					<IncludedMemoryFiles>
+						<File Id="4014009" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_657A8EA7.wem</Path>
+						</File>
+						<File Id="123534456" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_C3461247.wem</Path>
+						</File>
+						<File Id="220580282" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_705DE394.wem</Path>
+						</File>
+						<File Id="258945746" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_08BD678B.wem</Path>
+						</File>
+						<File Id="303241862" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_4FA1D0B4.wem</Path>
+						</File>
+						<File Id="425243737" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_E6366695.wem</Path>
+						</File>
+						<File Id="498911475" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_C52656E3.wem</Path>
+						</File>
+						<File Id="509424049" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_10B57A76.wem</Path>
+						</File>
+						<File Id="512054628" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_7C3723B8.wem</Path>
+						</File>
+						<File Id="518892867" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_55125C35.wem</Path>
+						</File>
+						<File Id="663707689" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_ABC898CA.wem</Path>
+						</File>
+						<File Id="731693796" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_4B7FB2BF.wem</Path>
+						</File>
+						<File Id="753769800" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_D5C3D5FB.wem</Path>
+						</File>
+						<File Id="850922407" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_C8427B68.wem</Path>
+						</File>
+						<File Id="923579909" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_F225C7DD.wem</Path>
+						</File>
+						<File Id="971105550" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_496B3C77.wem</Path>
+						</File>
+						<File Id="991986942" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_058A750B.wem</Path>
+						</File>
+						<File Id="1041086336" Language="SFX">
+							<ShortName>WHGA1 - Wood.wav</ShortName>
+							<Path>SFX\WHGA1 - Wood_90FB45F4.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{76CA4181-A454-46B6-B7D4-3F02C87F1349}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{76CA4181-A454-46B6-B7D4-3F02C87F1349}">
+							<DefaultSwitchValue>{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}">
+									<Media>
+										<File Id="220580282"/>
+										<File Id="1041086336"/>
+										<File Id="923579909"/>
+										<File Id="971105550"/>
+										<File Id="850922407"/>
+										<File Id="663707689"/>
+										<File Id="512054628"/>
+										<File Id="425243737"/>
+										<File Id="518892867"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3672C2D6-58F4-482C-89CA-4761F6277278}">
+							<DefaultSwitchValue>{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{25C982C1-FD4D-4EB7-89BD-0D8BCD80E6C2}">
+									<Media>
+										<File Id="509424049"/>
+										<File Id="498911475"/>
+										<File Id="4014009"/>
+										<File Id="991986942"/>
+										<File Id="123534456"/>
+										<File Id="258945746"/>
+										<File Id="753769800"/>
+										<File Id="731693796"/>
+										<File Id="303241862"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1571361561" Name="Tension" ObjectPath="\Game Parameters\Default Work Unit\Tension"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="556887514" Name="Locomotion" ObjectPath="\States\Default Work Unit\Locomotion">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Locomotion\None"/>
+						<State Id="340271938" Name="Walking" ObjectPath="\States\Default Work Unit\Locomotion\Walking"/>
+						<State Id="3863236874" Name="Running" ObjectPath="\States\Default Work Unit\Locomotion\Running"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2835351336" Name="GroundType" ObjectPath="\States\Default Work Unit\GroundType">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GroundType\None"/>
+						<State Id="2058049674" Name="Wood" ObjectPath="\States\Default Work Unit\GroundType\Wood"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
