@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		target = GameObject.FindGameObjectWithTag("Player");
+		
 		if (target)
 		{
 			Vector3 posNoZ = transform.position + offset;
@@ -30,5 +30,10 @@ public class CameraController : MonoBehaviour
 			transform.position = Vector3.Lerp(transform.position, targetPos, 0.25f);
 
 		}
+	}
+
+    void FixedUpdate()
+    {
+		target = GameObject.FindGameObjectWithTag("Player");
 	}
 }
