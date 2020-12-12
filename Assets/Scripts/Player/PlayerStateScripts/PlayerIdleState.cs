@@ -42,10 +42,10 @@ public class PlayerIdleState : PlayerState
             stateController.ChangeState(player.PlayerHide);
         }
 
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S) && player.canClimb)
+        /*if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S) && player.canClimb)
         {
             stateController.ChangeState(player.PlayerClimb);
-        }
+        }*/
     }
 
     public override void PhysicsUpdate()

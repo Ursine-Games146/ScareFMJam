@@ -838,7 +838,7 @@ GameObject:
   m_Layer: 0
   m_Name: DoorMaybe
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -908,7 +908,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b6bc0c056a5db9442baf713ef5104e1d, type: 3}
-  m_Color: {r: 0.81201553, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -926,8 +926,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517142018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.99, y: -2.63, z: 0}
-  m_LocalScale: {x: 0.79159653, y: 1.3687134, z: 1}
+  m_LocalPosition: {x: -6.04, y: -2.18, z: 0}
+  m_LocalScale: {x: 1.1194887, y: 1.3687134, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2314,6 +2314,7 @@ GameObject:
   - component: {fileID: 1543409736}
   - component: {fileID: 1543409735}
   - component: {fileID: 1543409734}
+  - component: {fileID: 1543409738}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2403,6 +2404,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1543409738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543409733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47492185ceffc04ea8dbc470455993d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1636458530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,7 +3059,7 @@ PrefabInstance:
     - target: {fileID: 6016500656506480325, guid: b108b1140acaa4b42bfcaf648f76ff80,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.53
+      value: -9.32
       objectReference: {fileID: 0}
     - target: {fileID: 6016500656506480325, guid: b108b1140acaa4b42bfcaf648f76ff80,
         type: 3}
@@ -3116,3 +3129,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4084021902412858934}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7769759598483005647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769759598483005646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47492185ceffc04ea8dbc470455993d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

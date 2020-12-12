@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		target = GameObject.FindGameObjectWithTag("Player");
 		if (target)
 		{
 			Vector3 posNoZ = transform.position + offset;
