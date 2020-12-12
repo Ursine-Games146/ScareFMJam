@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6454683823639716152}
+  - component: {fileID: 732231158}
   m_Layer: 10
   m_Name: Radio
   m_TagString: Untagged
@@ -30,6 +31,20 @@ Transform:
   m_Father: {fileID: 6016500656506480325}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732231158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5069879341632934845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57abad63326286c468fcacde6d6a2a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stations: []
+  station: {fileID: 0}
 --- !u!1 &6016500656506480376
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,6 +60,7 @@ GameObject:
   - component: {fileID: 6016500656506480377}
   - component: {fileID: 6016500656506480359}
   - component: {fileID: 6016500656506480358}
+  - component: {fileID: 7769759598483005654}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -231,3 +247,16 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6016500656506480324}
   Rb2d: {fileID: 6016500656506480378}
   playerData: {fileID: 11400000, guid: e3e39ad38359e574b88f7f211f305d93, type: 2}
+--- !u!114 &7769759598483005654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016500656506480376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799648fc5cde6f54a8aaeef2e44fbaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}

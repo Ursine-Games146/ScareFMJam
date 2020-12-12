@@ -26,12 +26,21 @@ public class RadioController : MonoBehaviour
         station.text = "FM-" + stations[currentStation];
     }
 
-    public void ChangeStations()
+    public void NextStation()
     {
         currentStation++;
         if(currentStation > 4)
         {
             currentStation = 0;
+        }
+    }
+
+    public void PreviousStation()
+    {
+        currentStation--;
+        if (currentStation < 0)
+        {
+            currentStation = 4;
         }
     }
 
