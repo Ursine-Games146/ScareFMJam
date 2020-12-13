@@ -25,7 +25,7 @@ public class PlayerIdleState : PlayerState
     {
         base.LogicUpdate();
 
-        playerData.currentStamina += 0.5f * Time.deltaTime;
+        playerData.currentStamina += 0.5f * Time.deltaTime;         //Recover Stamina
         player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
         if(playerData.currentStamina > playerData.maxStamina)
         {

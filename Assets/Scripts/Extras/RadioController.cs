@@ -8,22 +8,20 @@ public class RadioController : MonoBehaviour
     public float[] stations;
     private int currentStation;
     public Text station;
+    public bool canInteract;
 
     void Start()
     {
         stations = new float[5];
         stations[0] = 12.5f;
-        stations[1] = 15.3f;
-        stations[2] = 18.8f;
-        stations[3] = 21.0f;
-        stations[4] = 23.2f;
-
+        
         currentStation = 0;
     }
 
     void Update()
     {
         station.text = "FM-" + stations[currentStation];
+        NoteOne();
     }
 
     public void NextStation()
@@ -47,5 +45,30 @@ public class RadioController : MonoBehaviour
     public void RadioPowerOn()
     {
 
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Interactable"))
+        {
+            canInteract = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Interactable"))
+        {
+            canInteract = false;
+        }
+    }
+
+    public void NoteOne()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && canInteract)
+        {
+            stations[1] = 15.3f;
+        }
     }
 }

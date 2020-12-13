@@ -28,15 +28,17 @@ public class PlayerMoveState : PlayerState
 
 
         Vector2 X = player.Rb2d.velocity;
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))        //Move Right
         {
+            playerData.currentStamina += 0.1f * Time.deltaTime;
             player.spriteRenderer.flipX = false;
             player.Anim.speed = 1.0f;
             X.x = playerData.moveSpeed;
             player.Rb2d.velocity = X;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))        //Move Left
         {
+            playerData.currentStamina += 0.1f * Time.deltaTime;
             player.spriteRenderer.flipX = true;
             player.Anim.speed = 1.0f;
             X.x = playerData.moveSpeed * -1;
@@ -44,12 +46,12 @@ public class PlayerMoveState : PlayerState
         }
         else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
         {
-            stateController.ChangeState(player.PlayerIdle);
+            stateController.ChangeState(player.PlayerIdle);         //No Input
         }
 
 
         if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
-        {
+        {       //Sprinting Right
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             player.spriteRenderer.flipX = false;
@@ -58,8 +60,7 @@ public class PlayerMoveState : PlayerState
             player.Rb2d.velocity = X;
         }
         else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && Input.GetKey(KeyCode.LeftShift) && playerData.currentStamina > 0)
-        {
-
+        {       //Sprinting Left
             playerData.currentStamina -= 1.0f * Time.deltaTime;
             player.staminaBar.fillAmount = playerData.currentStamina / playerData.maxStamina;
             player.spriteRenderer.flipX = true;
@@ -67,7 +68,7 @@ public class PlayerMoveState : PlayerState
             X.x = playerData.runSpeed * -1;
             player.Rb2d.velocity = X;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina <= 0)
+        else if (Input.GetKeyUp(KeyCode.LeftShift) || playerData.currentStamina <= 0)   //Stop Sprinting
         {
             X.x = 0;
             player.Rb2d.velocity = X;

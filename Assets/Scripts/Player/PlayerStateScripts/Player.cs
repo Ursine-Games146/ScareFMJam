@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public PlayerHideState PlayerHide { get; private set; }
     public PlayerClimbState PlayerClimb { get; private set; }
 
+    public RadioController Radio { get; set; }
+
 
     public Animator Anim { get; private set; }
 
@@ -38,6 +40,7 @@ public class Player : MonoBehaviour
         PlayerMove = new PlayerMoveState(this, StateController, playerData, "moving");
         PlayerHide = new PlayerHideState(this, StateController, playerData, "hiding");
         PlayerClimb = new PlayerClimbState(this, StateController, playerData, "climbing");
+        Radio = GetComponent<RadioController>();
     }
 
     private void Start()
