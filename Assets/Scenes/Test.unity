@@ -1404,168 +1404,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938532802}
   m_CullTransparentMesh: 0
---- !u!1 &959764165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 107833161803627557, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c,
-    type: 3}
-  m_PrefabInstance: {fileID: 107833160883710688}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &959764166 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 107833161803627558, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c,
-    type: 3}
-  m_PrefabInstance: {fileID: 107833160883710688}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &959764172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959764165}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7215075e824ecf4abdfa099cf8d5238, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreList: []
-  AvoidanceSensitivity: 1
-  MaxAvoidanceLength: 1
-  RotateTowardsTarget: 0
-  RB: {fileID: 959764166}
-  TurnForce: 5
-  MoveForce: 5
-  StrafeForce: 5
-  TurnSpeed: 0
-  MoveSpeed: 0
-  StrafeSpeed: 0
-  StoppingDistance: 3
-  DestinationTransform: {fileID: 7769759598483005648}
-  FaceTowardsTransform: {fileID: 7769759598483005648}
---- !u!114 &959764173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959764165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea99d7406bae0404195d20652de48155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreList: []
-  EnableTagFilter: 0
-  AllowedTags: []
-  OnDetected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 959764172}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnLostDetection:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 959764172}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  DetectionMode: 1
-  RequiresLineOfSight: 0
-  BlocksLineOfSight:
-    serializedVersion: 2
-    m_Bits: 0
-  TestLOSTargetsOnly: 0
-  NumberOfRays: 1
-  MinimumVisibility: 0.5
-  SensorRange: 10
-  DetectsOnLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  SensorUpdateMode: 0
-  CheckInterval: 1
-  InitialBufferSize: 20
-  DynamicallyIncreaseBufferSize: 1
---- !u!114 &959764174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959764165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4c266bf91a80044af037d5d437176e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreList: []
-  EnableTagFilter: 1
-  AllowedTags:
-  - Player
-  OnDetected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 959764175}
-        m_MethodName: DoAttack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnLostDetection:
-    m_PersistentCalls:
-      m_Calls: []
-  Length: 3
-  Radius: 0
-  ObstructedByLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  DetectsOnLayers:
-    serializedVersion: 2
-    m_Bits: 1024
-  DetectionMode: 1
-  Direction: {x: -1, y: -0.5}
-  WorldSpace: 0
-  SensorUpdateMode: 0
-  InitialBufferSize: 20
-  DynamicallyIncreaseBufferSize: 1
-  OnObstruction:
-    m_PersistentCalls:
-      m_Calls: []
-  OnClear:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &959764175 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6122722242669216780, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c,
-    type: 3}
-  m_PrefabInstance: {fileID: 107833160883710688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959764165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 742b1622fd6b37744ae6a77bcdd3d25f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1012804923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3137,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 959764172, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c, type: 3}
+      propertyPath: DestinationTransform
+      value: 
+      objectReference: {fileID: 7769759598483005648}
+    - target: {fileID: 959764172, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c, type: 3}
+      propertyPath: FaceTowardsTransform
+      value: 
+      objectReference: {fileID: 7769759598483005648}
     - target: {fileID: 107833161803627557, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c,
         type: 3}
       propertyPath: m_Name
@@ -3364,6 +3210,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7769759598483005648}
+    - target: {fileID: 6122722242669216780, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7769759598483005649}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 381c7a8ee8f6ad44ab2388cc6b01c26c, type: 3}
 --- !u!1001 &4084021902412858934
@@ -3461,3 +3312,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4084021902412858934}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7769759598483005649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6016500656506480358, guid: b108b1140acaa4b42bfcaf648f76ff80,
+    type: 3}
+  m_PrefabInstance: {fileID: 4084021902412858934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769759598483005646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8344e611d34ec954aa8069d3a23f8cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

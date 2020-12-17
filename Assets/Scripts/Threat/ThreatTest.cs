@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SensorToolkit;
 
 public class ThreatTest : MonoBehaviour
 {
     Rigidbody2D rb2d;
     Animator anim;
+    public Player player;
     public GameObject Killbox;
+    public RaySensor2D rs2d;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -25,6 +28,11 @@ public class ThreatTest : MonoBehaviour
         {
             anim.SetBool("chase", false);
             anim.SetBool("idle", true);
+        }
+
+        if (player.isDead)
+        {
+            rs2d.enabled = false;
         }
     }
 
