@@ -10,6 +10,7 @@ TagManager:
   - Moveable
   - Hideable
   - Climbable
+  - Killbox
   layers:
   - Default
   - TransparentFX

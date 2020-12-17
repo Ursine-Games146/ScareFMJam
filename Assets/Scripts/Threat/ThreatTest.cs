@@ -6,7 +6,7 @@ public class ThreatTest : MonoBehaviour
 {
     Rigidbody2D rb2d;
     Animator anim;
-
+    public GameObject Killbox;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -31,5 +31,15 @@ public class ThreatTest : MonoBehaviour
     public void DoAttack()
     {
         anim.SetTrigger("attack");
+    }
+
+    public void KillBox()
+    {
+        Killbox.SetActive(true);
+    }
+
+    public void StopAttack()
+    {
+        Killbox.SetActive(false);
     }
 }

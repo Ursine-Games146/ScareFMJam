@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     public PlayerMoveState PlayerMove { get; private set; }
     public PlayerHideState PlayerHide { get; private set; }
     public PlayerClimbState PlayerClimb { get; private set; }
+    public PlayerDieState PlayerDie { get; private set; }
 
     public RadioController Radio { get; set; }
 
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     public Image staminaBar;
     public SpriteRenderer spriteRenderer;
     public Rigidbody2D Rb2d;
+    public bool isDead;
 
     public int FacingDirection { get; set; }
     public bool canHide { get; set; }
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour
         PlayerMove = new PlayerMoveState(this, StateController, playerData, "moving");
         PlayerHide = new PlayerHideState(this, StateController, playerData, "hiding");
         PlayerClimb = new PlayerClimbState(this, StateController, playerData, "climbing");
+        PlayerDie = new PlayerDieState(this, StateController, playerData, "die");
         Radio = GetComponent<RadioController>();
     }
 
@@ -53,6 +57,7 @@ public class Player : MonoBehaviour
         isHiding = false;
         canHide = false;
         canClimb = false;
+        isDead = false;
         FacingDirection = 1;
 
         StateController.Initialize(PlayerIdle);
@@ -61,6 +66,11 @@ public class Player : MonoBehaviour
     private void Update()
     {
         StateController.CurrentState.LogicUpdate();
+
+        if(isDead == true)
+        {
+            StartCoroutine(GameOver());
+        }
     }
 
     private void FixedUpdate()
@@ -94,5 +104,19 @@ public class Player : MonoBehaviour
             canClimb = false;
             Rb2d.gravityScale = 1;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Killbox"))
+        {
+            StateController.ChangeState(PlayerDie);
+        }
+    }
+
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(0);
     }
 }
