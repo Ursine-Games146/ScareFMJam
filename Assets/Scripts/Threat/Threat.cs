@@ -60,4 +60,5 @@ public class Threat : MonoBehaviour
         transform.position = new Vector2(11, -1);
         Rb2d.gravityScale = 1;
     }
+
 }

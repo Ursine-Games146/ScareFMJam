@@ -44,7 +44,7 @@ public class RadioController : MonoBehaviour
 
     public void RadioPowerOn()
     {
-
+        Debug.Log("Power On");
     }
 
 
