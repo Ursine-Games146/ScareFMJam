@@ -1691,11 +1691,6 @@ PrefabInstance:
       propertyPath: station
       value: 
       objectReference: {fileID: 1441924603}
-    - target: {fileID: 5069879341632934845, guid: b108b1140acaa4b42bfcaf648f76ff80,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6016500656506480325, guid: b108b1140acaa4b42bfcaf648f76ff80,
         type: 3}
       propertyPath: m_RootOrder
@@ -2126,12 +2121,12 @@ PrefabInstance:
     - target: {fileID: 5594168325341285838, guid: 0033fcfaafe9e254ea65129dd0804840,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000026226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5594168325649159867, guid: 0033fcfaafe9e254ea65129dd0804840,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0033fcfaafe9e254ea65129dd0804840, type: 3}

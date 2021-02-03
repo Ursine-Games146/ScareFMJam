@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6454683823639716152}
   - component: {fileID: 732231158}
   - component: {fileID: 787036479}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1130695269
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 8712975968784607522, guid: 684bccc126387704798e19b77b1da567,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
